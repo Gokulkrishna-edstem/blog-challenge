@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #341553;
+  background-color: #f8fafc;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*-----------------------*/
+/*NAVBAR SECTION*/
+/*-----------------------*/
+.nav {
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .nav-sub a {
+  text-decoration: none;
+  color: #341553;
+  padding-right: 2.2rem;
+
+  /* width: 400px; */
+}
+
+/*------------------------*/
+/* HERO SECTION */
+/*------------------------*/
+
+.hero {
+  display: flex;
+  background-color: rgb(255, 255, 254);
+}
+
+.hero .hero1 {
+  width: 50%;
+}
+
+.hero .hero2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.hero .hero2 h2 {
+  width: 500px;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.hero .hero2 p {
+  font-size: 0.8rem;
+}
+
+.hero .hero2 a {
+  text-decoration: none;
+  color: #341553;
+  margin-top: 10px;
+}
+
+/*-----------------------*/
+/*POST_GRID SECTION*/
+/*-----------------------*/
+
+.post-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 9.6rem 3.2rem;
+  gap: 2.4rem;
+}
+
+.post-grid .cards {
+  column-gap: 7.2rem;
+  row-gap: 3.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.post-grid .cards .card {
+  background-color: #ffffff;
+
+  border-radius: 10px;
+  height: 450px;
+  overflow: hidden;
+  box-shadow: 4px 3px 10px 10px #33333310;
+}
+.post-grid .card:hover {
+  transform: translate(4px);
+}
+
+.post-grid .cards .card-description {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.post-grid .cards a {
+  text-decoration: none;
+  color: #341553;
+  margin-top: 3px;
+  padding-left: 10px;
+}
+.post-grid .cards p {
+  padding: 0 10px;
+}
+
+.post-grid .cards h3 {
+  padding: 10px;
+  font-size: 1.5rem;
+  width: 400px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+/*-----------------------*/
+/*USEFULL TIP SECTION*/
+/*-----------------------*/
+
+.usefull-tip {
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem 2.1rem;
+  margin-top: 9.2rem;
+  background-color: rgb(255, 255, 254);
+}
+
+.usefull-tip h3 {
+  margin-left: 2.2rem;
+  font-size: 1.5rem;
+}
+
+.usefull-tip .tips-cards {
+  display: flex;
+}
+
+.usefull-tip .tips-cards .tip-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 3rem 2.5rem;
+  box-shadow: 1px 1px 3px 2px #33333356;
+  border-radius: 5px;
+  height: 300px;
+  width: 700px;
+}
+
+.usefull-tip .tips-cards .tip-card .icon:hover {
+  transform: scale(1);
+}
+
+.usefull-tip .tips-cards .tip-card .icon {
+  height: 75px;
+  width: 75px;
+}
+
+.usefull-tip .tips-cards .tip-card:nth-child(1) {
+  background-color: rgba(130, 130, 179, 0.397);
+}
+.usefull-tip .tips-cards .tip-card:nth-child(2) {
+  background-color: rgba(252, 210, 157, 0.836);
+}
+.usefull-tip .tips-cards .tip-card:nth-child(3) {
+  background-color: rgba(253, 253, 176, 0.466);
+}
+.usefull-tip .tips-cards .tip-card:nth-child(4) {
+  background-color: rgba(170, 255, 170, 0.555);
+}
+
+/*-----------------------*/
+/*USEFULL TIP SECTION*/
+/*-----------------------*/
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 4.2rem 4.5rem;
+  gap: 2.4rem;
+  border-bottom: 2px solid #333;
+}
+.footer .footer-sec {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer-sec p {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.footer .footer-sec a {
+  text-decoration: none;
+  color: #341553;
+}
+
+.copyright {
+  padding: 2.2rem 4.5rem;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 786px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+  .hero .hero2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 40px;
+  }
+
+  .post-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 9.6rem 3.2rem;
+    gap: 2.4rem;
+  }
+
+  .post-grid .cards {
+    row-gap: 2.6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .usefull-tip {
+    padding: 2.4rem 2.1rem;
+    margin-top: 9.2rem;
+    background-color: rgb(255, 255, 254);
+  }
+
+  .usefull-tip .tips-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .usefull-tip .tips-cards {
+    width: 300px;
+  }
+}
